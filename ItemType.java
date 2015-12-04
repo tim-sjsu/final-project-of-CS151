@@ -1,0 +1,15 @@
+/**
+ * Created by Lambda on 11/15/2015.
+ */
+
+/**
+ * ENUMERATE CLASS - ITEM TYPE
+ *
+ * REPRESENTS THE TYPE OF ITEM - MORE USER FRIENDLY FOR READABILITY
+ */
+public enum ItemType {
+  SODA,
+  SNACK,
+  GRADE_BOOK,
+  DEFAULT
+}

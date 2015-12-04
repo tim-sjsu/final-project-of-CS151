@@ -14,13 +14,15 @@ public class Connect
 		DatabaseConnection connect = new DatabaseConnection();
 		int ID = 2;
 		String password = "frank2";
+		System.out.println("Balance: " + connect.getStudentBalance(ID));
 		connect.getStudentData(ID,password);	
-		System.out.print("Item " + ID + " is: " + connect.getItemsData(ID) + " dollars\n");
+		String id ="2";
+		System.out.print("Item " + ID + " is: " + connect.getItemsData(id) + " dollars\n");
 		//System.out.print("After transaction:");
 		//connect.getStudentData(ID,password);
 		System.out.print("moneyBox "+ ID + " has: ");
 		connect.getMoneyBoxData(ID);
-		connect.updateStudent(4, 123);
+		connect.updateStudent(2, 103);
 		connect.updateMoneyBox(1,10.0);
 		connect.updateMoneyBox(1,65.4);
 		connect.updateItems(1);
