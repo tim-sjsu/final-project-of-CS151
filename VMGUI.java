@@ -29,7 +29,7 @@ public class VMGUI extends JFrame{
     pane.add(checkout(), BorderLayout.EAST);
     pane.add(logIn(), BorderLayout.SOUTH);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setSize(650,550);
+    setSize(750,650);
     setVisible(true);
   }
 
@@ -256,6 +256,7 @@ public class VMGUI extends JFrame{
 			    v.check_out(id.getText(), checkoutItems);
 			    balance.setText("Balance: "+ CurrencyConvertor.convert_to_USD_fmt(v.get_usr_balance(getID()))
 			    );
+			    JOptionPane.showMessageDialog(null, "Checkout Successful", "Success", JOptionPane.INFORMATION_MESSAGE);
 		       
 			  }
             } 
